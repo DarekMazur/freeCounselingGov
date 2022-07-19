@@ -1,9 +1,9 @@
-import TitleWrapper from "../../components/molecules/TitleWrapper/TitleWrapper";
+import Slider from "../../components/organisms/Slider/Slider";
 
 const HomeView = () => {
   return (
     <>
-      <TitleWrapper />
+      <Slider />
     </>
   );
 };
