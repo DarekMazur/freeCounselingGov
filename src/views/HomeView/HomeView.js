@@ -1,4 +1,4 @@
-const Root = () => {
+const HomeView = () => {
   return (
     <>
       <p>Lorem Ipsum Dolor Sit Amet</p>
@@ -6,4 +6,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default HomeView;
