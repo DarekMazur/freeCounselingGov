@@ -4,8 +4,8 @@ import Title from "../../atoms/Title/Title";
 const TitleWrapper = () => {
   return (
     <>
-      <Title title="Lorem Ipsum" />
-      <Title title="Dolor Sit Amet" isSubtitle />
+      <Title title="System nieodpłatnej pomocy" />
+      <Title title="wszystko, co musisz wiedzieć" isSubtitle />
       <Button />
     </>
   );

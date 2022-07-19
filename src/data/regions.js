@@ -1,0 +1,86 @@
+export const regions = [
+  {
+    name: "Powiat buski",
+    link: "https://bip.powiat.busko.pl/p,173,punkty-nieodplatnej-pomocy-prawnej-oraz-nieodplatnego-poradnictwa-obywatelskiego",
+    email: "npp@powiat.busko.pl",
+    phone: "41 370 50 98",
+  },
+  {
+    name: "Powiat jędrzejowski",
+    link: "http://jedrzejow.pl/category/informator/pomoc-prawna/",
+    email: "",
+    phone: "",
+  },
+  {
+    name: "Powiat kazimierski",
+    link: "https://powiat.kazimierzaw.pl/index.php/nieodplatna-pomoc-prawna",
+    email: "starostwo@powiat.kazimierzaw.pl",
+    phone: "41 350 23 12",
+  },
+  {
+    name: "Powiat kielecki",
+    link: "https://bip.powiat.kielce.pl/nieodplatna-pomoc-prawna/index",
+    email: "nieodplatnapomocprawna@powiat.kielce.pl",
+    phone: "41 200 17 85",
+  },
+  {
+    name: "Powiat konecki",
+    link: "https://www.konecki.powiat.pl/index.php/dla-mieszkanca/nieodplatna-pomoc-prawna-w-powiecie-koneckim",
+    email: "bok@konecki.powiat.pl",
+    phone: "41 260 48 35",
+  },
+  {
+    name: "Powiat pińczowski",
+    link: "http://powiat.pinczow.pl/porady-prawne,10,51,51,p.html",
+    email: "poradyprawne@pinczow.net",
+    phone: "41 357 60 01",
+  },
+  {
+    name: "Powiat ostrowiecki",
+    link: "https://samorzad.gov.pl/web/powiat-ostrowiecki/nieodplatna-pomoc-prawna",
+    email: "pomocprawna@powiat.ostrowiecki.eu",
+    phone: "664 990 364",
+  },
+  {
+    name: "Powiat opatowski",
+    link: "https://www.bip.opatow.pl/strona-3339-nieodplatna_pomoc_prawna.html",
+    email: "",
+    phone: "797 994 712",
+  },
+  {
+    name: "Powiat sandomierski",
+    link: "http://www.powiat.sandomierz.pl/484-nieodplatna-pomoc-prawna.html?preview",
+    email: "obywatelski@powiat.sandomierz.pl",
+    phone: "15 832 32 43",
+  },
+  {
+    name: "Powiat skarżyski",
+    link: "https://skarzysko.powiat.pl/powiat/aktualnosci/4726-nieodplatna-pomoc-prawna",
+    email: "",
+    phone: "41 39-53-042",
+  },
+  {
+    name: "Powiat starachowicki",
+    link: "https://www.powiat.starachowice.pl/?pid=70",
+    email: "npp@powiat.starachowice.pl",
+    phone: "41 276 09 19",
+  },
+  {
+    name: "Powiat staszowski",
+    link: "https://staszowski.eu/punkt-nieodplatnej-pomocy-prawnej.html",
+    email: "",
+    phone: "15 866 50 63",
+  },
+  {
+    name: "Powiat włoszczowski",
+    link: "http://www.starostwo.wloszczowa.eobip.pl/bip_s_wloszczowa/index.jsp?place=Menu02&news_cat_id=165&layout=1&page=0",
+    email: "bok@powiat-wloszczowa.pl",
+    phone: "504 752 871",
+  },
+  {
+    name: "Miasto Kielce",
+    link: "http://www.um.kielce.pl/darmowa-pomoc-prawna/",
+    email: "",
+    phone: "41 367 67 03",
+  },
+];
