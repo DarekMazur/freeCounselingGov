@@ -1,9 +1,9 @@
-import TitleWrapper from "../../molecules/TitleWrapper/TitleWrapper";
+import Logo from "../../atoms/Logo/Logo";
 
 const Header = () => {
   return (
     <header>
-      <TitleWrapper />
+      <Logo />
       <navigation>Lorem Ipsum</navigation>
     </header>
   );

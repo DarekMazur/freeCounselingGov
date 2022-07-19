@@ -1,7 +1,9 @@
+import TitleWrapper from "../../components/molecules/TitleWrapper/TitleWrapper";
+
 const HomeView = () => {
   return (
     <>
-      <p>Lorem Ipsum Dolor Sit Amet</p>
+      <TitleWrapper />
     </>
   );
 };
