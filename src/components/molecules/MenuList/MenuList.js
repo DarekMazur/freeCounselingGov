@@ -1,9 +1,11 @@
+import MenuListItem from "../../atoms/MenuListItem/MenuListItem";
+
 const MenuList = () => {
   return (
     <ul>
-      <li>Home</li>
-      <li>FAQ</li>
-      <li>Contact</li>
+      <MenuListItem item="Home" />
+      <MenuListItem item="FAQ" />
+      <MenuListItem item="Contact" />
     </ul>
   );
 };
