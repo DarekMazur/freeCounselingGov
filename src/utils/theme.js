@@ -13,6 +13,7 @@ export const theme = {
     headerFont: '"Playfair Display SC", serif',
   },
   fontSize: {
+    title: "6rem",
     xxl: "5rem",
     xl: "4.2rem",
     l: "3rem",
