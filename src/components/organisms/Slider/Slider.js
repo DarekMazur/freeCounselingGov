@@ -84,7 +84,7 @@ const Slider = () => {
       </div>
       <TitleWrapper />
       <div>
-        <Button />
+        <Button label="Ankieta" />
       </div>
     </>
   );

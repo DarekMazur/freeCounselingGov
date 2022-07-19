@@ -6,7 +6,7 @@ const TitleWrapper = () => {
     <>
       <Title title="System nieodpłatnej pomocy" />
       <Title title="wszystko, co musisz wiedzieć" isSubtitle />
-      <Button />
+      <Button label="Dowiedz się wiecej" />
     </>
   );
 };

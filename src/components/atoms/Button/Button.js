@@ -1,5 +1,5 @@
-const Button = () => {
-  return <button>Click me</button>;
+const Button = ({ label }) => {
+  return <button>{label}</button>;
 };
 
 export default Button;
