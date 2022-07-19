@@ -1,10 +1,11 @@
 import Logo from "../../atoms/Logo/Logo";
+import MenuList from "../../molecules/MenuList/MenuList";
 
 const Header = () => {
   return (
     <header>
       <Logo isWide />
-      <navigation>Lorem Ipsum</navigation>
+      <MenuList />
     </header>
   );
 };
