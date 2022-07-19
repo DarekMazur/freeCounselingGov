@@ -1,3 +1,4 @@
+import Button from "../../atoms/Button/Button";
 import TitleWrapper from "../../molecules/TitleWrapper/TitleWrapper";
 
 const Slider = () => {
@@ -5,7 +6,9 @@ const Slider = () => {
     <>
       <div></div>
       <TitleWrapper />
-      <div></div>
+      <div>
+        <Button />
+      </div>
     </>
   );
 };
