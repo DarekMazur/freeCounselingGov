@@ -3,7 +3,7 @@ import Logo from "../../atoms/Logo/Logo";
 const Header = () => {
   return (
     <header>
-      <Logo />
+      <Logo isWide />
       <navigation>Lorem Ipsum</navigation>
     </header>
   );
