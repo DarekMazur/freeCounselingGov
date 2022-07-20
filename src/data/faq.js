@@ -184,7 +184,7 @@ export const faq = [
     ),
   },
   {
-    question: "Na jakich zasadach udzielana a jest pomoc?",
+    question: "Na jakich zasadach udzielana jest pomoc?",
     answer: (
       <div>
         <div>
