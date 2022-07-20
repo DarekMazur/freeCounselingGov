@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const showBox = keyframes`
   0% {

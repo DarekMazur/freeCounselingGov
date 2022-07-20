@@ -8,6 +8,7 @@ import Header from "../../components/organisms/Header/Header";
 import PrivacyView from "../PrivacyView/PrivacyView";
 import ScrollToTop from "../../utils/helpers";
 import FaqView from "../FaqView/FaqView";
+import ContactView from "../ContactView/ContactView";
 
 const Root = () => {
   return (
@@ -20,6 +21,7 @@ const Root = () => {
         <Routes>
           <Route path="/privacy" element={<PrivacyView />} />
           <Route path="/faq" element={<FaqView />} />
+          <Route path="/kontakt" element={<ContactView />} />
           <Route exact path="/" element={<HomeView />} />
         </Routes>
         <Footer />
