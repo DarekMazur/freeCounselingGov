@@ -1,12 +1,13 @@
 import Logo from "../../atoms/Logo/Logo";
 import MenuList from "../../molecules/MenuList/MenuList";
+import { StyledHeader } from "./Header.styles";
 
 const Header = () => {
   return (
-    <header>
+    <StyledHeader>
       <Logo isWide />
       <MenuList />
-    </header>
+    </StyledHeader>
   );
 };
 

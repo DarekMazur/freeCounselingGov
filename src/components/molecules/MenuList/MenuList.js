@@ -1,14 +1,15 @@
 import MenuListItem from "../../atoms/MenuListItem/MenuListItem";
+import { StyledMenuList } from "./MenuList.styles";
 
 const MenuList = () => {
   const menuData = ["Home", "FAQ", "Contact"];
 
   return (
-    <ul>
+    <StyledMenuList>
       {menuData.map((item) => (
         <MenuListItem item={item} />
       ))}
-    </ul>
+    </StyledMenuList>
   );
 };
 

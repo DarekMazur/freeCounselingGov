@@ -1,5 +1,7 @@
+import { StyledMenuListItem } from "./MenuListItem.styles";
+
 const MenuListItem = ({ item }) => {
-  return <li>{item}</li>;
+  return <StyledMenuListItem>{item}</StyledMenuListItem>;
 };
 
 export default MenuListItem;
