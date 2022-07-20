@@ -4,13 +4,30 @@ import { StyledMenuList } from "../../molecules/MenuList/MenuList.styles";
 import { StyledFooter } from "./Footer.styles";
 
 const Footer = () => {
+  const menuData = [
+    {
+      title: "Polityka prywatności",
+      link: "",
+    },
+    {
+      title: "Kontakt",
+      link: "",
+    },
+    {
+      title: "Ankieta",
+      link: "",
+    },
+    {
+      title: "FAQ",
+      link: "",
+    },
+  ];
   return (
     <StyledFooter>
       <StyledMenuList>
-        <MenuListItem item="Polityka prywatności" />
-        <MenuListItem item="Kontakt" />
-        <MenuListItem item="Ankieta" />
-        <MenuListItem item="FAQ" />
+        {menuData.map((item) => (
+          <MenuListItem item={item} />
+        ))}
       </StyledMenuList>
       <FooterWrapper />
     </StyledFooter>
