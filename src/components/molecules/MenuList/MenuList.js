@@ -2,7 +2,7 @@ import MenuListItem from "../../atoms/MenuListItem/MenuListItem";
 import { StyledMenuList } from "./MenuList.styles";
 
 const MenuList = () => {
-  const menuData = ["Home", "FAQ", "Contact"];
+  const menuData = ["Strona główna", "FAQ", "Kontakt"];
 
   return (
     <StyledMenuList>
