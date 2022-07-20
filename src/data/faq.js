@@ -1,5 +1,3 @@
-import { A } from "../components/A/A.style";
-
 export const faq = [
   {
     question: "Czym jest nieodpłatna pomoc prawna?",
@@ -239,13 +237,13 @@ export const faq = [
             tłumacza migowego.
           </p>
           <p>
-            <A
+            <a
               href="https://np.ms.gov.pl/osoby-niepelnosprawne"
               target="_blank"
               rel="noreferrer"
             >
               Szczegółowe informacje
-            </A>
+            </a>
             .
           </p>
         </div>
@@ -279,13 +277,13 @@ export const faq = [
           <p>
             Harmonogram pracy oraz lokalizację punktów w poszczególnych
             powiatach można znaleźć{" "}
-            <A
+            <a
               href="https://np.ms.gov.pl/lokalizacja-punktow"
               target="_blank"
               rel="noreferrer"
             >
               tutaj
-            </A>
+            </a>
             .
           </p>
         </div>

@@ -6,7 +6,14 @@ import TitleIcon from "../../atoms/TitleIcon/TitleIcon";
 import { TitleContent } from "../TitleContent/TitleContent.styles";
 import { StyledTitleWrapper } from "./TitleWrapper.styles";
 
-const TitleWrapper = ({ handleClick, isOpen }) => {
+const TitleWrapper = ({
+  handleClick,
+  isOpen,
+  title,
+  subtitle,
+  icon,
+  isButton,
+}) => {
   const titleRef = useRef();
 
   useEffect(() => {
@@ -30,16 +37,18 @@ const TitleWrapper = ({ handleClick, isOpen }) => {
   return (
     <>
       <StyledTitleWrapper>
-        <TitleIcon />
+        <TitleIcon icon={icon} />
         <TitleContent ref={titleRef}>
-          <Title title="System nieodpłatnej pomocy" color="red" />
-          <Title title="wszystko, co musisz wiedzieć" isSubtitle />
+          <Title title={title} color="red" />
+          <Title title={subtitle} isSubtitle />
         </TitleContent>
       </StyledTitleWrapper>
-      <Button
-        label={isOpen ? "Zamknij" : "Dowiedz się wiecej"}
-        handleClick={handleClick}
-      />
+      {isButton ? (
+        <Button
+          label={isOpen ? "Zamknij" : "Dowiedz się wiecej"}
+          handleClick={handleClick}
+        />
+      ) : null}
     </>
   );
 };

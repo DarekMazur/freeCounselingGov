@@ -9,6 +9,7 @@ export const StyledTitleIcon = styled.span`
   border-right: ${({ theme }) => `1.5rem solid ${theme.colors.blue}`};
   padding-right: 2rem;
   margin-right: 2rem;
+  color: ${({ theme }) => theme.colors.blue};
 
   svg {
     height: 6rem;

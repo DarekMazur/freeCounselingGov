@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StyledTitleIcon } from "./TitleIcons.styles";
 
-const TitleIcon = () => {
+const TitleIcon = ({ icon }) => {
   return (
     <StyledTitleIcon>
-      <FontAwesomeIcon icon={["fas", "scale-balanced"]} />
+      <FontAwesomeIcon icon={icon} />
     </StyledTitleIcon>
   );
 };

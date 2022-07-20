@@ -123,7 +123,14 @@ const Slider = () => {
           </p>
         </SliderSection>
         <SliderSection color="blue" ref={switchRef}>
-          <TitleWrapper handleClick={handleClick} isOpen={isOpen} />
+          <TitleWrapper
+            title="System nieodpłatnej pomocy"
+            subtitle="wszystko, co musisz wiedzieć"
+            icon={["fas", "scale-balanced"]}
+            handleClick={handleClick}
+            isOpen={isOpen}
+            isButton
+          />
         </SliderSection>
         <SliderSection color="white" ref={titleRef} image={choice}>
           <Title
