@@ -9,7 +9,7 @@ const TitleWrapper = ({ handleClick, isOpen }) => {
       <StyledTitleWrapper>
         <TitleIcon />
         <div>
-          <Title title="System nieodpłatnej pomocy" />
+          <Title title="System nieodpłatnej pomocy" color="red" />
           <Title title="wszystko, co musisz wiedzieć" isSubtitle />
         </div>
       </StyledTitleWrapper>

@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 export const variables = {
   MS_LINK: "https://np.ms.gov.pl/",
   SUW_LINK: "https://www.kielce.uw.gov.pl/",
@@ -8,3 +11,13 @@ export const getCurrentYear = () => {
   const currentYear = new Date().getFullYear();
   return currentYear;
 };
+
+export default function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}

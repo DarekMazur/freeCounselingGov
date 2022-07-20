@@ -1,17 +1,17 @@
 export const mainMenu = [
   {
     title: "Strona główna",
-    link: "",
+    link: "/",
     icon: ["fas", "house"],
   },
   {
     title: "FAQ",
-    link: "",
+    link: "/faq",
     icon: ["fas", "circle-question"],
   },
   {
     title: "Kontakt",
-    link: "",
+    link: "/kontakt",
     icon: ["fas", "at"],
   },
 ];
@@ -19,18 +19,18 @@ export const mainMenu = [
 export const socialData = [
   {
     title: "Polityka prywatności",
-    link: "",
+    link: "/privacy",
   },
   {
     title: "Kontakt",
-    link: "",
+    link: "/kontakt",
   },
   {
     title: "Ankieta",
-    link: "",
+    link: "/",
   },
   {
     title: "FAQ",
-    link: "",
+    link: "/faq",
   },
 ];

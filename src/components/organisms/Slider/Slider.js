@@ -3,10 +3,11 @@ import { Container } from "../../atoms/Container/Container.styles";
 import { SliderSection } from "../../molecules/SliderSection/SliderSection.styles";
 import TitleWrapper from "../../molecules/TitleWrapper/TitleWrapper";
 import { SliderWrapper } from "./Slider.styles";
-import background from "../../../assets/images/law.jpg";
 import Title from "../../atoms/Title/Title";
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
+import background from "../../../assets/images/law.jpg";
+import choice from "../../../assets/images/choice.jpg";
 
 const Slider = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +44,7 @@ const Slider = () => {
           ref={contentRef}
           align="top"
         >
-          <h3>Program nieodpłatnej pomocty</h3>
+          <h3>Program nieodpłatnej pomocy</h3>
           <p>
             Na system nieodpłatnej pomocy składa się{" "}
             <b>nieodpłatna pomoc prawna</b>,{" "}
@@ -124,7 +125,7 @@ const Slider = () => {
         <SliderSection color="blue" ref={switchRef}>
           <TitleWrapper handleClick={handleClick} isOpen={isOpen} />
         </SliderSection>
-        <SliderSection color="blue" ref={titleRef}>
+        <SliderSection color="white" ref={titleRef} image={choice}>
           <Title
             isSubtitle
             title="Zobacz jaki rodzaj pomocy będzie dla ciebie najlepszy"

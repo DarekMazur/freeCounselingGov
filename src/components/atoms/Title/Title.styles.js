@@ -4,6 +4,7 @@ export const StyledTitle = styled.div`
   padding: 0;
   margin: 0;
   text-align: center;
+  color: ${({ theme, color }) => (color ? theme.colors[color] : "inherit")};
 
   h2 {
     margin: 0;

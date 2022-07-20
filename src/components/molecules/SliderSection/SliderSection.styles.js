@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SliderSection = styled.div`
   width: 50vw;
-  height: calc(100vh - 7rem);
+  height: calc(100vh - 9.5rem);
   display: flex;
   flex-direction: column;
   justify-content: ${({ align }) => (align ? align : "center")};

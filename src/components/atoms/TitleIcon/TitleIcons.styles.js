@@ -6,7 +6,9 @@ export const StyledTitleIcon = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: ${({ theme }) => `1rem solid ${theme.colors.blue}`};
+  border-right: ${({ theme }) => `1.5rem solid ${theme.colors.blue}`};
+  padding-right: 2rem;
+  margin-right: 2rem;
 
   svg {
     height: 6rem;
