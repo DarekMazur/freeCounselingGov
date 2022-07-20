@@ -1,9 +1,14 @@
 import { Container } from "../../components/atoms/Container/Container.styles";
+import TitleWrapper from "../../components/molecules/TitleWrapper/TitleWrapper";
 
 const PrivacyView = () => {
   return (
-    <Container>
-      <h2>Polityka prywatności</h2>
+    <Container padding="3rem">
+      <TitleWrapper
+        title="Polityka prywatności"
+        subtitle="tak dbamy o Twoją prywatność"
+        icon={["fas", "lock"]}
+      />
       <p>
         Polityka prywatności opisuje zasady przetwarzania przez nas informacji
         na Twój temat, w tym danych osobowych oraz ciasteczek, czyli tzw.
