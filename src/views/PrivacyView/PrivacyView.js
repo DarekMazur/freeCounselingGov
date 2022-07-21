@@ -20,7 +20,7 @@ const PrivacyView = () => {
           <ol>
             <li>
               Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod
-              adresem url: temp.pl
+              adresem url: poradnictwo.netlify.app
             </li>
             <li>
               Operatorem serwisu oraz Administratorem danych osobowych jest:

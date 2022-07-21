@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Logo from "../../atoms/Logo/Logo";
 import MenuList from "../../molecules/MenuList/MenuList";
 import { StyledHeader } from "./Header.styles";
@@ -5,7 +6,9 @@ import { StyledHeader } from "./Header.styles";
 const Header = () => {
   return (
     <StyledHeader>
-      <Logo isWide />
+      <Link to="/">
+        <Logo isWide />
+      </Link>
       <MenuList />
     </StyledHeader>
   );
