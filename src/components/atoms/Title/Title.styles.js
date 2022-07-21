@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledTitle = styled.div`
   padding: 0;
   margin: 0;
-  text-align: center;
+  text-align: ${({ isLeft }) => (isLeft ? "left" : "center")};
   color: ${({ theme, color }) => (color ? theme.colors[color] : "inherit")};
 
   h2 {
