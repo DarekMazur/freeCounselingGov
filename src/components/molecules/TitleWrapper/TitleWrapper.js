@@ -1,10 +1,13 @@
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import Button from "../../atoms/Button/Button";
 import Title from "../../atoms/Title/Title";
 import TitleIcon from "../../atoms/TitleIcon/TitleIcon";
 import { TitleContent } from "../TitleContent/TitleContent.styles";
 import { StyledTitleWrapper } from "./TitleWrapper.styles";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const TitleWrapper = ({
   handleClick,

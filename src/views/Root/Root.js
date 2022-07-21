@@ -6,7 +6,7 @@ import { theme } from "../../utils/theme";
 import Footer from "../../components/organisms/Footer/Footer";
 import Header from "../../components/organisms/Header/Header";
 import PrivacyView from "../PrivacyView/PrivacyView";
-import ScrollToTop from "../../utils/helpers";
+import { ScrollToTop } from "../../utils/helpers";
 import FaqView from "../FaqView/FaqView";
 import ContactView from "../ContactView/ContactView";
 

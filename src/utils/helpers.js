@@ -12,7 +12,7 @@ export const getCurrentYear = () => {
   return currentYear;
 };
 
-export default function ScrollToTop() {
+export const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -20,4 +20,4 @@ export default function ScrollToTop() {
   }, [pathname]);
 
   return null;
-}
+};
