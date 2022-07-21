@@ -27,7 +27,7 @@ export const socialData = [
   },
   {
     title: "Ankieta",
-    link: "/",
+    link: "/form",
   },
   {
     title: "FAQ",

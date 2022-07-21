@@ -9,6 +9,7 @@ import gsap from "gsap";
 import background from "../../../assets/images/law.jpg";
 import choice from "../../../assets/images/choice.jpg";
 import { A } from "../../atoms/A/A.styles";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -138,7 +139,9 @@ const Slider = () => {
             isSubtitle
             title="Zobacz jaki rodzaj pomocy będzie dla ciebie najlepszy"
           />
-          <Button label="Ankieta" />
+          <Link to="/form">
+            <Button label="Ankieta" />
+          </Link>
         </SliderSection>
       </SliderWrapper>
     </Container>

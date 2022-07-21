@@ -9,6 +9,7 @@ import PrivacyView from "../PrivacyView/PrivacyView";
 import { ScrollToTop } from "../../utils/helpers";
 import FaqView from "../FaqView/FaqView";
 import ContactView from "../ContactView/ContactView";
+import FormView from "../FormView/FormView";
 
 const Root = () => {
   return (
@@ -22,6 +23,7 @@ const Root = () => {
           <Route path="/privacy" element={<PrivacyView />} />
           <Route path="/faq" element={<FaqView />} />
           <Route path="/kontakt" element={<ContactView />} />
+          <Route path="/form" element={<FormView />} />
           <Route exact path="/" element={<HomeView />} />
         </Routes>
         <Footer />
