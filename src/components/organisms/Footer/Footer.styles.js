@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledFooter = styled.footer`
   display: flex;
@@ -7,4 +7,8 @@ export const StyledFooter = styled.footer`
   padding: 0.5rem 2rem;
   height: 12rem;
   background-color: ${({ theme }) => theme.colors.grey};
+
+  @media screen and (max-width: 726px) {
+    height: auto;
+  }
 `;

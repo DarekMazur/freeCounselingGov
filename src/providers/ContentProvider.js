@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 export const ContentContext = React.createContext({
   globalCount: 0,

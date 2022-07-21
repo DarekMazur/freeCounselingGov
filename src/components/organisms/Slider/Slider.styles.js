@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const SliderWrapper = styled.div`
   position: relative;
@@ -7,4 +7,9 @@ export const SliderWrapper = styled.div`
   display: flex;
   margin: 0;
   padding: 0;
+
+  @media screen and (max-width: 726px) {
+    flex-direction: column-reverse;
+    left: 0;
+  }
 `;

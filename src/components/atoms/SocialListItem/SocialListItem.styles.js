@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledSocialLIstItem = styled.li`
   color: ${({ theme }) => theme.colors.blue};
@@ -18,5 +18,9 @@ export const StyledSocialLIstItem = styled.li`
     &:hover {
       color: ${({ theme }) => theme.colors.red};
     }
+  }
+
+  @media screen and (max-width: 726px) {
+    margin: 0.5rem;
   }
 `;

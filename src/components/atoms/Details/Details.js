@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const showBox = keyframes`
   0% {
@@ -82,6 +82,17 @@ export const Details = styled.details`
 
       summary:focus {
         outline: ${({ theme }) => `0.3rem solid ${theme.colors.blue}`};
+      }
+    }
+  }
+
+  @media screen and (max-width: 726px) {
+    width: 100%;
+
+    summary {
+      & > div {
+        margin: 0;
+        padding: 2rem;
       }
     }
   }

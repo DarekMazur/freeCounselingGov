@@ -1,15 +1,15 @@
-import Button from "../../atoms/Button/Button";
-import { Container } from "../../atoms/Container/Container.styles";
-import { SliderSection } from "../../molecules/SliderSection/SliderSection.styles";
-import TitleWrapper from "../../molecules/TitleWrapper/TitleWrapper";
-import { SliderWrapper } from "./Slider.styles";
-import Title from "../../atoms/Title/Title";
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import background from "../../../assets/images/law.jpg";
-import choice from "../../../assets/images/choice.jpg";
-import { A } from "../../atoms/A/A.styles";
-import { Link } from "react-router-dom";
+import Button from '../../atoms/Button/Button';
+import { Container } from '../../atoms/Container/Container.styles';
+import { SliderSection } from '../../molecules/SliderSection/SliderSection.styles';
+import TitleWrapper from '../../molecules/TitleWrapper/TitleWrapper';
+import { SliderWrapper } from './Slider.styles';
+import Title from '../../atoms/Title/Title';
+import { useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
+import background from '../../../assets/images/law.jpg';
+import choice from '../../../assets/images/choice.jpg';
+import { A } from '../../atoms/A/A.styles';
+import { Link } from 'react-router-dom';
 
 const Slider = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Slider = () => {
     tl.current = gsap.timeline({ paused: true });
 
     tl.current.to([titleRef.current, switchRef.current, contentRef.current], {
-      x: "+=50vw",
+      x: '+=50vw',
       duration: 0.5,
       stagger: 0.05,
     });
@@ -42,15 +42,15 @@ const Slider = () => {
       <SliderWrapper>
         <SliderSection
           image={background}
-          color={"white"}
+          color={'white'}
           ref={contentRef}
           align="top"
         >
           <h3>Program nieodpłatnej pomocy</h3>
           <p>
-            Na system nieodpłatnej pomocy składa się{" "}
-            <b>nieodpłatna pomoc prawna</b>,{" "}
-            <b>nieodpłatne poradnictwo obywatelskie</b> oraz{" "}
+            Na system nieodpłatnej pomocy składa się{' '}
+            <b>nieodpłatna pomoc prawna</b>,{' '}
+            <b>nieodpłatne poradnictwo obywatelskie</b> oraz{' '}
             <b>nieodpłatna mediacja</b>. Jest to inicjatywa społeczna, mająca
             zapewnić wszystkim mieszkańcom Polski równy dostęp do wymiaru
             sprawiedliwości. Kierowana jest zarówno do osób prywatnych, których
@@ -58,7 +58,7 @@ const Slider = () => {
             usług prawnika, jak i do przedsiębiorców prowadzących jednoosobową
             działalność gospodarczą. System nieodpłatnej pomocy funkcjonuje w
             ponad <b>1500 punktach na terenie całej Polski</b>. Listę
-            funkcjonujących punktów można znaleźć{" "}
+            funkcjonujących punktów można znaleźć{' '}
             <A
               href="https://zapisy-np.ms.gov.pl/"
               target="_blank"
@@ -77,7 +77,7 @@ const Slider = () => {
             </li>
             <li>
               elektronicznie – pisząc na podany przez powiat adres e-mail lub
-              zapisując się przy pomocy formularza dostępnego na{" "}
+              zapisując się przy pomocy formularza dostępnego na{' '}
               <A
                 href="https://zapisy-np.ms.gov.pl/"
                 target="_blank"
@@ -124,11 +124,11 @@ const Slider = () => {
             відомості про те, як отримати допомогу.
           </p>
         </SliderSection>
-        <SliderSection color="blue" ref={switchRef}>
+        <SliderSection color="blue" ref={switchRef} wideOnly>
           <TitleWrapper
             title="System nieodpłatnej pomocy"
             subtitle="wszystko, co musisz wiedzieć"
-            icon={["fas", "scale-balanced"]}
+            icon={['fas', 'scale-balanced']}
             handleClick={handleClick}
             isOpen={isOpen}
             isButton

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledCopyright = styled.div`
   position: absolute;
@@ -20,5 +20,12 @@ export const StyledCopyright = styled.div`
     &:hover {
       color: ${({ theme }) => theme.colors.yellow};
     }
+  }
+
+  @media screen and (max-width: 726px) {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 0);
   }
 `;
