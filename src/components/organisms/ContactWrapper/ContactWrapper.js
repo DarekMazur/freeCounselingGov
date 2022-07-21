@@ -22,12 +22,12 @@ const ContactWrapper = () => {
     <StyledContactWrapper>
       <Title title="Jednostki rządowe" isSubtitle isLeft />
       {govermentUnits.map((unit) => (
-        <ContactItem item={unit} isGov />
+        <ContactItem item={unit} key={unit.name} />
       ))}
 
       <Title title="Starostwa powiatowe" isSubtitle isLeft />
       {regions.map((unit) => (
-        <ContactItem item={unit} />
+        <ContactItem item={unit} key={unit.name} />
       ))}
     </StyledContactWrapper>
   );

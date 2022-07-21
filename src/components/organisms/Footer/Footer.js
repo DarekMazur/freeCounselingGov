@@ -1,3 +1,4 @@
+import React from "react";
 import { socialData } from "../../../data/menuData";
 import MenuListItem from "../../atoms/MenuListItem/MenuListItem";
 import FooterWrapper from "../../molecules/FooterWrapper/FooterWrapper";
@@ -9,7 +10,9 @@ const Footer = () => {
     <StyledFooter>
       <StyledMenuList>
         {socialData.map((item) => (
-          <MenuListItem item={item} />
+          <React.Fragment key={item.title}>
+            <MenuListItem item={item} />
+          </React.Fragment>
         ))}
       </StyledMenuList>
       <FooterWrapper />

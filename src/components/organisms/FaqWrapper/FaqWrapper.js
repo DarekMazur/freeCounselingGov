@@ -13,7 +13,7 @@ const FaqWrapper = () => {
       />
       <div>
         {faq.map((question) => (
-          <Details>
+          <Details key={question.question}>
             <summary>{question.question}</summary>
             {question.answer}
           </Details>

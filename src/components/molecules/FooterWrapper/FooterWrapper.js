@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { getCurrentYear, variables } from "../../../utils/helpers";
+import { A } from "../../atoms/A/A.styles";
 import { StyledCopyright } from "../../atoms/Copyright/Copyright.styles";
 import Logo from "../../atoms/Logo/Logo";
 import { StyledSocialLIstItem } from "../../atoms/SocialListItem/SocialListItem.styles";
@@ -11,31 +12,31 @@ const FooterWrapper = () => {
     <StyledFooterWrapper>
       <StyledMenuList isColumn>
         <StyledSocialLIstItem>
-          <a
+          <A
             href="https://www.facebook.com/suw.kielce/"
             target="_blank"
             rel="noreferrer"
             isYellow
           >
             <FontAwesomeIcon icon={["fab", "facebook-square"]} />
-          </a>
+          </A>
         </StyledSocialLIstItem>
         <StyledSocialLIstItem>
-          <a
+          <A
             href="https://twitter.com/SwietokrzyskiW/"
             target="_blank"
             rel="noreferrer"
             isYellow
           >
             <FontAwesomeIcon icon={["fab", "twitter-square"]} />
-          </a>
+          </A>
         </StyledSocialLIstItem>
       </StyledMenuList>
       <StyledCopyright>
         {getCurrentYear()} &copy;&nbsp;
-        <a href={variables.SUW_LINK} target="_blanc">
+        <A href={variables.SUW_LINK} target="_blanc">
           Świętokrzyski Urząd Wojewódzki
-        </a>
+        </A>
       </StyledCopyright>
       <Logo />
     </StyledFooterWrapper>
