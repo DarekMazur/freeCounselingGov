@@ -1,7 +1,7 @@
 import { regions } from "../../../data/regions";
 import Title from "../../atoms/Title/Title";
 import ContactItem from "../../molecules/ContactItem/ContactItem";
-import { StyledContactWrapper } from "./ContactWrapper.styles";
+import { Wrapper } from "../../molecules/Wrapper/Wrapper.styles";
 
 const ContactWrapper = () => {
   const govermentUnits = [
@@ -19,7 +19,7 @@ const ContactWrapper = () => {
     },
   ];
   return (
-    <StyledContactWrapper>
+    <Wrapper>
       <Title title="Jednostki rządowe" isSubtitle isLeft />
       {govermentUnits.map((unit) => (
         <ContactItem item={unit} key={unit.name} />
@@ -29,7 +29,7 @@ const ContactWrapper = () => {
       {regions.map((unit) => (
         <ContactItem item={unit} key={unit.name} />
       ))}
-    </StyledContactWrapper>
+    </Wrapper>
   );
 };
 

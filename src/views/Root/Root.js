@@ -10,24 +10,25 @@ import { ScrollToTop } from "../../utils/helpers";
 import FaqView from "../FaqView/FaqView";
 import ContactView from "../ContactView/ContactView";
 import FormView from "../FormView/FormView";
+import ContentPovider from "../../providers/ContentProvider";
 
 const Root = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <ThemeProvider theme={theme}>
-        {/* <ContentPovider> */}
-        <GlobalStyle />
-        <Header />
-        <Routes>
-          <Route path="/privacy" element={<PrivacyView />} />
-          <Route path="/faq" element={<FaqView />} />
-          <Route path="/kontakt" element={<ContactView />} />
-          <Route path="/form" element={<FormView />} />
-          <Route exact path="/" element={<HomeView />} />
-        </Routes>
-        <Footer />
-        {/* </ContentPovider> */}
+        <ContentPovider>
+          <GlobalStyle />
+          <Header />
+          <Routes>
+            <Route path="/privacy" element={<PrivacyView />} />
+            <Route path="/faq" element={<FaqView />} />
+            <Route path="/kontakt" element={<ContactView />} />
+            <Route path="/form" element={<FormView />} />
+            <Route exact path="/" element={<HomeView />} />
+          </Routes>
+          <Footer />
+        </ContentPovider>
       </ThemeProvider>
     </BrowserRouter>
   );

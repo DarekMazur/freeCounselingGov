@@ -23,7 +23,7 @@ export const questions = [
     id: 3,
     type: "npp",
     question:
-      "Czy potrzebujesz informacji w sprawie Twoich praw i obowiązków, w związku z toczącym się postępowaniem przygotowawczym, administracyjnym, sądowym lub sądowoadministracyjnym?",
+      "Czy potrzebujesz informacji w sprawie Twoich praw i obowiązków, w związku z toczącym się postępowaniem?",
     value: values.npp,
   },
   {
@@ -76,7 +76,7 @@ export const questions = [
     id: 11,
     type: "npo",
     question:
-      "Czy potrzebujesz pomocy w sporządzeniu planu działania, mającego na celu samodzielne rozwiązanie Twojego problemu i pomocy w jego realizacji?",
+      "Czy potrzebujesz pomocy w sporządzeniu planu działania, mającego na celu samodzielne rozwiązanie Twojego problemu?",
     value: values.npo,
   },
   {
