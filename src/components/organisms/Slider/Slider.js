@@ -8,6 +8,7 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import background from "../../../assets/images/law.jpg";
 import choice from "../../../assets/images/choice.jpg";
+import { A } from "../../atoms/A/A.styles";
 
 const Slider = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,14 +58,14 @@ const Slider = () => {
             działalność gospodarczą. System nieodpłatnej pomocy funkcjonuje w
             ponad <b>1500 punktach na terenie całej Polski</b>. Listę
             funkcjonujących punktów można znaleźć{" "}
-            <a
+            <A
               href="https://zapisy-np.ms.gov.pl/"
               target="_blank"
               rel="noreferrer"
               isYellow
             >
               tutaj
-            </a>
+            </A>
             .
           </p>
           <p>Na poradę można zapisać się:</p>
@@ -76,14 +77,14 @@ const Slider = () => {
             <li>
               elektronicznie – pisząc na podany przez powiat adres e-mail lub
               zapisując się przy pomocy formularza dostępnego na{" "}
-              <a
+              <A
                 href="https://zapisy-np.ms.gov.pl/"
                 target="_blank"
                 rel="noreferrer"
                 isYellow
               >
                 stronie
-              </a>
+              </A>
               ;
             </li>
             <li>osobiście w starostwie powiatowym.</li>
