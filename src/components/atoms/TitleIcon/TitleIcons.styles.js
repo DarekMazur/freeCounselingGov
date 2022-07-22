@@ -15,4 +15,14 @@ export const StyledTitleIcon = styled.span`
     height: 6rem;
     width: 6rem;
   }
+
+  @media screen and (max-width: 726px) {
+    width: 2rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+
+    svg {
+      display: none;
+    }
+  }
 `;
