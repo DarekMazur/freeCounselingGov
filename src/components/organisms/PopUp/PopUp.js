@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useContext } from "react";
 import { ContentContext } from "../../../providers/ContentProvider";
 import { StyledPopUpWrapper } from "./PopUp.styles";
@@ -9,7 +10,9 @@ const PopUp = () => {
     <>
       {popupStatus === "true" ? (
         <StyledPopUpWrapper>
-          <button onClick={() => getPopupStatus(false)}>X</button>
+          <button onClick={() => getPopupStatus(false)}>
+            <FontAwesomeIcon icon={["fas", "circle-xmark"]} />
+          </button>
           <div>
             <h3>
               Комунікація для біженців війни з України та українців, які

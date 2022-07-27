@@ -36,6 +36,11 @@ export const StyledPopUpWrapper = styled.div`
     position: absolute;
     top: 10%;
     right: 10%;
+    color: ${({ theme }) => theme.colors.blue};
+    font-size: ${({ theme }) => theme.fontSize.l};
+    background: transparent;
+    border: none;
+    cursor: pointer;
   }
 
   @media screen and (max-width: 726px) {
