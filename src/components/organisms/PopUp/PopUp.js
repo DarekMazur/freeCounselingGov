@@ -7,7 +7,6 @@ const PopUp = () => {
 
   return (
     <>
-      {console.log(typeof popupStatus)}
       {popupStatus === "true" ? (
         <StyledPopUpWrapper>
           <button onClick={() => getPopupStatus(false)}>X</button>

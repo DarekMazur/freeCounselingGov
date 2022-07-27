@@ -27,7 +27,7 @@ export const setInitStorage = () => {
   let pop = false;
 
   if (
-    window.localStorage.length === 0 &&
+    window.localStorage.length <= 1 &&
     (navigator.language === "uk" ||
       navigator.language === "uk-UA" ||
       navigator.language === "ru-UA" ||
