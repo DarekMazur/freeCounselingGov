@@ -34,8 +34,8 @@ export const StyledPopUpWrapper = styled.div`
 
   button {
     position: absolute;
-    top: 10%;
-    right: 10%;
+    top: 16%;
+    right: 27%;
     color: ${({ theme }) => theme.colors.blue};
     font-size: ${({ theme }) => theme.fontSize.l};
     background: transparent;
