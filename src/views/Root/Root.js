@@ -1,17 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyle } from '../../styles/GlobalStyle';
-import HomeView from '../HomeView/HomeView';
-import { theme } from '../../utils/theme';
-import Footer from '../../components/organisms/Footer/Footer';
-import Header from '../../components/organisms/Header/Header';
-import PrivacyView from '../PrivacyView/PrivacyView';
-import { ScrollToTop } from '../../utils/helpers';
-import FaqView from '../FaqView/FaqView';
-import ContactView from '../ContactView/ContactView';
-import FormView from '../FormView/FormView';
-import ContentPovider from '../../providers/ContentProvider';
-import ResultsView from '../ResultsView/Resultsview';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyle } from "../../styles/GlobalStyle";
+import HomeView from "../HomeView/HomeView";
+import { theme } from "../../utils/theme";
+import Footer from "../../components/organisms/Footer/Footer";
+import Header from "../../components/organisms/Header/Header";
+import PrivacyView from "../PrivacyView/PrivacyView";
+import { ScrollToTop, setInitStorage } from "../../utils/helpers";
+import FaqView from "../FaqView/FaqView";
+import ContactView from "../ContactView/ContactView";
+import FormView from "../FormView/FormView";
+import ContentPovider from "../../providers/ContentProvider";
+import ResultsView from "../ResultsView/Resultsview";
 
 const Root = () => {
   return (
@@ -20,6 +20,7 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <ContentPovider>
           <GlobalStyle />
+          {setInitStorage()}
           <Header />
           <Routes>
             <Route path="/privacy" element={<PrivacyView />} />

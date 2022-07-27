@@ -21,3 +21,26 @@ export const ScrollToTop = () => {
 
   return null;
 };
+
+export const setInitStorage = () => {
+  let lang = "";
+  let pop = false;
+
+  if (
+    window.localStorage.length === 0 &&
+    (navigator.language === "uk" ||
+      navigator.language === "uk-UA" ||
+      navigator.language === "ru-UA" ||
+      navigator.language === "ru" ||
+      navigator.language === "ru-RU" ||
+      navigator.language === "en-US")
+  ) {
+    lang = navigator.language;
+    window.localStorage.setItem("lang", lang);
+
+    if (lang !== "") {
+      pop = true;
+      window.localStorage.setItem("isPopDisp", pop);
+    }
+  }
+};
