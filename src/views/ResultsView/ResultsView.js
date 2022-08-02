@@ -34,7 +34,6 @@ const ResultsView = () => {
 
   return (
     <>
-      {console.log(resultObj)}
       {globalValue !== 0 ? (
         <ResultsWrapper
           image={resultObj.image}
